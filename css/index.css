@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'roboto', Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s;
+    position: fixed;
+    background-color: grey;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    width: 800px;
+    list-style: none;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    width: 200px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.articles {
+    width: 720px;
+    margin: 60px auto 0 auto;
+    min-height: 85vh;
+}
+
+.article {
+    width: 100%;
+    background-color: #efefef;
+    overflow: hidden;
+    margin: 0 auto 30px auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.article-image {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.article-image img {
+    width: 100%;
+}
+
+.preview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 4px #333;
+    padding: 20px;
+    position: relative;
+}
+
+.preview p,.preview h3 {
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+article {
+    width: 800px;
+    overflow: hidden;
+    margin: 60px auto 25px auto;
+}
+
+.head-article {
+    width: 100%;
+    position: relative;
+}
+
+.head-article img {
+    display: flex;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: whitesmoke;
+    text-shadow: 3px 3px 4px #333;
+    padding: 15px 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.info h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.content {
+    width: 100%;
+    text-align: left;
+    line-height: 32px;
+    padding: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 3px auto 8px auto;
+}
+
+.content h2{
+    font-size: 30px;
+    margin: 25px auto 15px auto;
+}
+
+.content img{
+    width: 100%;
+}
+
+.tags {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+}
+
+.tags p {
+    background-color: red;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 3px;
+    font-size: 13px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 30px 0;
+    background-color: grey;
+}
+
+footer p {
+    width: 900px;
+    color: white;
+    margin: auto;
+}
