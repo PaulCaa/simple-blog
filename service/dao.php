@@ -15,7 +15,6 @@
         post.title,
         post.date,
         aut.name_author AS author,
-        cat.name_category AS category,
         post.extract,
         post.image
     FROM blog_posts AS post, blog_categories AS cat, blog_authors AS aut
@@ -35,7 +34,6 @@
         post.image,
         post.date,
         aut.name_author AS author,
-        cat.name_category AS category,
         post.tags
       FROM blog_posts post
       JOIN blog_categories cat ON post.id_category = cat.id_category
